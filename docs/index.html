@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Face Detection API</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@590;600&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+   
+
+
+    
+    <div id = "date"></div>
+
+            
+    <main>
+        <div id ="choose">
+          <video id="video" height="400" width="300" autoplay muted></video>
+        </div>
+    
+        <div id = "resultsBox">
+        <div id = "AgeandGenderResults">
+          <p id ="AandGRs">Age and Gender</p>
+          <p id ="Age1"></p>
+          <p id ="Gender1"></p>
+          <p id ="GenderProbability1"></p>
+        </div>
+        <div id = "FaceExpressionResults" >
+            <p id ="FERs">Face Expressions</p>
+            <p id ="Angry1"></p>
+            <p id ="Disgusted1"></p>
+            <p id ="Fearful1"></p>
+            <p id ="Happy1"></p>
+            <p id ="Neutral1"></p>
+            <p id ="Sad1"></p>
+            <p id ="Surprised1"></p>
+        </div> 
+    </div>
+    </main>
+
+    <script src="js/face-api.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
