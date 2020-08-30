@@ -47,7 +47,7 @@ video.addEventListener("playing", () => {
 
     const resizedDetections = faceapi.resizeResults(detections, displaySize);
     //これオンにするとちゃんと枠1つになるよ
-    //canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
+    canvas.getContext("2d").clearRect(0, 0, canvas.width, canvas.height);
 
     resizedDetections.forEach(detection => {
       const box = detection.detection.box
